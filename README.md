@@ -53,13 +53,18 @@ Para executar o projeto, são necessárias as seguintes ferramentas:
 
 ### ⚙️ Passo a Passo de Execução
 
-- **1-Iniciar o LocalStack:**|
-localstack start
+
+***1-Iniciar o LocalStack:**
+
+```localstack start```
 
 
-- **2-Criar os recursos AWS simulados:**|
-  aws s3api create-bucket -- ``` bucket arquivos-projeto --endpoint. ```
-  Configure também a **função Lambda** e a **tabela DynamoDB**, vinculando a trigger do S3 à Lambda.
+***2-Criar os recursos AWS simulados:**
+
+```aws s3api create-bucket --bucket arquivos-projeto --endpoint-url=http://localhost:4566```
+
+
+Configure também a função Lambda e a tabela DynamoDB, vinculando a trigger do S3 à Lambda.
 
 
 - **3-Implementar o código da Lambda:**
