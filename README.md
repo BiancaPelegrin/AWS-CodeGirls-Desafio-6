@@ -59,11 +59,11 @@ localstack start
 
 - **2-Criar os recursos AWS simulados:**|
   aws s3api create-bucket --bucket arquivos-projeto --endpoint
- - Configure também a **função Lambda** e a **tabela DynamoDB**, vinculando a trigger do S3 à Lambda.
+  Configure também a **função Lambda** e a **tabela DynamoDB**, vinculando a trigger do S3 à Lambda.
 
 
 - **3-Implementar o código da Lambda:**
-- O script (exemplo: lambda_function.py) é responsável por ler o arquivo recebido, extrair e tratar dados, e registrar o resultado no DynamoDB.
+ O script (exemplo: lambda_function.py) é responsável por ler o arquivo recebido, extrair e tratar dados, e registrar o resultado no DynamoDB.
 
 - **4-Testar o fluxo:**
 -Faça upload de um arquivo para o bucket S3.
