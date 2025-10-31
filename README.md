@@ -58,7 +58,7 @@ localstack start
 
 
 - **2-Criar os recursos AWS simulados:**|
-  aws s3api create-bucket --bucket arquivos-projeto --endpoint-url=http://localhost:4566
+  aws s3api create-bucket --bucket arquivos-projeto --endpoint -url=http://localhost:4566
   Configure também a **função Lambda** e a **tabela DynamoDB**, vinculando a trigger do S3 à Lambda.
 
 
