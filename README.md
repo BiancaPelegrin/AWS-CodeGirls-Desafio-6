@@ -25,7 +25,7 @@ Todo o ambiente foi executado localmente, garantindo testes rápidos, sem custos
  
 Este projeto aborda na prática diversos tópicos importantes de computação em nuvem:
 
-### ☁️ Amazon S3:### armazenamento e gestão de arquivos.
+*** ☁️ Amazon S3: *** armazenamento e gestão de arquivos.
 ### ⚙️ AWS Lambda:### funções serverless para processamento automatizado.
 ### 🗄️ Amazon DynamoDB:### banco de dados NoSQL escalável e de alta performance.
 ### 🔗 Amazon API Gateway:### interface para exposição de dados via endpoints REST.
