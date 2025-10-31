@@ -29,10 +29,15 @@ Todo o ambiente foi executado **localmente**, garantindo testes rápidos, sem cu
 Este projeto aborda na prática diversos tópicos importantes de computação em nuvem:
 
 **☁️ Amazon S3:** armazenamento e gestão de arquivos.
+
 **⚙️ AWS Lambda** funções serverless para processamento automatizado.
+
 **🗄️ Amazon DynamoDB:** banco de dados NoSQL escalável e de alta performance.
+
 **🔗 Amazon API Gateway:** interface para exposição de dados via endpoints REST.
+
 **🧩 LocalStack:** simulação de serviços AWS em ambiente local para testes e desenvolvimento.
+
 **💻 AWS CLI:** criação e gerenciamento de recursos AWS de forma automatizada.
 
 ---
@@ -58,20 +63,17 @@ Para executar o projeto, são necessárias as seguintes ferramentas:
 
 ### ⚙️ Passo a Passo de Execução
 
-| **1-Iniciar o LocalStack:**|
-|----------------|------------------------|---------------|
+- **1-Iniciar o LocalStack:**|
 localstack start
 
 
-| **2-Criar os recursos AWS simulados:**|
-|----------------|------------------------|---------------|
+- **2-Criar os recursos AWS simulados:**|
 aws s3api create-bucket --bucket arquivos-projeto --endpoint-url=http://localhost:4566
-
--Configure também a **função Lambda** e a **tabela DynamoDB**, vinculando a trigger do S3 à Lambda.
+- Configure também a **função Lambda** e a **tabela DynamoDB**, vinculando a trigger do S3 à Lambda.
 
 
 **3-Implementar o código da Lambda:**
--O script (exemplo: lambda_function.py) é responsável por ler o arquivo recebido, extrair e tratar dados, e registrar o resultado no DynamoDB.
+- O script (exemplo: lambda_function.py) é responsável por ler o arquivo recebido, extrair e tratar dados, e registrar o resultado no DynamoDB.
 
 **4-Testar o fluxo:**
 
