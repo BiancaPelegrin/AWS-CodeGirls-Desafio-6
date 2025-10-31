@@ -13,10 +13,10 @@ Todo o ambiente foi executado **localmente**, garantindo testes rápidos, sem cu
 
 ### 🧩 Funcionamento do Fluxo
 
-👤 O **usuário**  realiza o envio de um arquivo para o **bucket S3.**
-☁️ **O evento de upload** vaciona automaticamente uma **função Lambda** configurada como trigger.
-⚙️ A função **processa o conteúdo** e grava os dados estruturados no DynamoDB.
-🔗 O **API Gateway** é utilizado para expor os **dados armazenados** permitindo que um **cliente** (como o Postman ou uma aplicação externa) consulte os registros de forma prática.
+1-👤 O **usuário**  realiza o envio de um arquivo para o **bucket S3.**
+2-☁️ **O evento de upload** vaciona automaticamente uma **função Lambda** configurada como trigger.
+3-⚙️ A função **processa o conteúdo** e grava os dados estruturados no DynamoDB.
+5-🔗 O **API Gateway** é utilizado para expor os **dados armazenados** permitindo que um **cliente** (como o Postman ou uma aplicação externa) consulte os registros de forma prática.
 
 ---
 
