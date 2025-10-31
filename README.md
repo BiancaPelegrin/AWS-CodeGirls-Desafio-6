@@ -54,7 +54,7 @@ Para executar o projeto, são necessárias as seguintes ferramentas:
 ### ⚙️ Passo a Passo de Execução
 
 
-**1-Iniciar o LocalStack:**
+***1-Iniciar o LocalStack:***
 
 ```localstack start```
 
@@ -67,10 +67,10 @@ Para executar o projeto, são necessárias as seguintes ferramentas:
 Configure também a função Lambda e a tabela DynamoDB, vinculando a trigger do S3 à Lambda.
 
 
-- **3-Implementar o código da Lambda:**
+- ***3-Implementar o código da Lambda:***
  O script (exemplo: lambda_function.py) é responsável por ler o arquivo recebido, extrair e tratar dados, e registrar o resultado no DynamoDB.
 
-- **4-Testar o fluxo:**
+- ***4-Testar o fluxo:***
 -Faça upload de um arquivo para o bucket S3.
 -Verifique a execução automática da função Lambda.
 -Confirme os registros gravados no DynamoDB.
