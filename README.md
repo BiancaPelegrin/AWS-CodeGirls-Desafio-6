@@ -14,11 +14,8 @@ Todo o ambiente foi executado **localmente**, garantindo testes rápidos, sem cu
 ### 🧩 Funcionamento do Fluxo
 
 1- 👤 O **usuário**  realiza o envio de um arquivo para o **bucket S3.**
-
 2- ☁️ **O evento de upload** vaciona automaticamente uma **função Lambda** configurada como trigger.
-
 3- ⚙️ A função **processa o conteúdo** e grava os dados estruturados no DynamoDB.
-
 4- 🔗 O **API Gateway** é utilizado para expor os **dados armazenados** permitindo que um **cliente** (como o Postman ou uma aplicação externa) consulte os registros de forma prática.
 
 ---
@@ -29,15 +26,10 @@ Todo o ambiente foi executado **localmente**, garantindo testes rápidos, sem cu
 Este projeto aborda na prática diversos tópicos importantes de computação em nuvem:
 
 **☁️ Amazon S3:** armazenamento e gestão de arquivos.
-
 **⚙️ AWS Lambda** funções serverless para processamento automatizado.
-
 **🗄️ Amazon DynamoDB:** banco de dados NoSQL escalável e de alta performance.
-
 **🔗 Amazon API Gateway:** interface para exposição de dados via endpoints REST.
-
 **🧩 LocalStack:** simulação de serviços AWS em ambiente local para testes e desenvolvimento.
-
 **💻 AWS CLI:** criação e gerenciamento de recursos AWS de forma automatizada.
 
 ---
@@ -57,7 +49,7 @@ Para executar o projeto, são necessárias as seguintes ferramentas:
 
 
 
-###🧰 Comandos para Configuração###
+### 🧰 Comandos para Configuração
 
 ---
 
