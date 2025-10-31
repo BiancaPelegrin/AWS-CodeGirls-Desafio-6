@@ -54,12 +54,12 @@ Para executar o projeto, são necessárias as seguintes ferramentas:
 ### ⚙️ Passo a Passo de Execução
 
 
-***1-Iniciar o LocalStack:**
+**1-Iniciar o LocalStack:**
 
 ```localstack start```
 
 
-***2-Criar os recursos AWS simulados:**
+***2-Criar os recursos AWS simulados:***
 
 ```aws s3api create-bucket --bucket arquivos-projeto --endpoint-url=http://localhost:4566```
 
